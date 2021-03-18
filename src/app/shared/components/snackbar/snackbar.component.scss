@@ -1,0 +1,13 @@
+@import './../../../../assets/styles/variables';
+
+.snackbar{
+    border-radius: 0.3em;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 0.5em 2em;
+    background: $tertiary_color;
+    &.light{
+        color: #333;
+    }
+}

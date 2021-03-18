@@ -1,0 +1,12 @@
+<div class="palette-card p-3 ">
+  <div class="selector-wrap">
+    <ng-container *ngFor="let color of palette.color">
+      <div class="cursor-pointer color-selector" [style.background]="color.hex" (click)="copyColor(color.hex)">
+        <div class="hex-color" [class.light]="checkColorIntesity(color.hex)"> {{color.hex}} </div>
+      </div>
+    </ng-container>
+  </div>
+  <!-- <div class="palette-heart">
+    <p class="m-0 mt-2"> <img src="../../../assets/image/heart.png"> </p>
+  </div> -->
+</div>

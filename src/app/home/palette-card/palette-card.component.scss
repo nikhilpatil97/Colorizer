@@ -1,0 +1,35 @@
+@import './../../../assets/styles/variables';
+
+.palette-card{
+    background: $secondary_color;
+    border-radius: 0.3em;
+    .selector-wrap{
+        // border: 2px solid $primary-color;
+        overflow: hidden;
+    }
+    .color-selector{
+        height: 3em;
+        position: relative;
+        .hex-color{
+            display: none;
+            padding: 0.3em 1em;
+            background: #fff3;
+            font-size: 0.7em;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            &.light{
+                background: #0007;
+            }
+        }
+        &:hover{
+            .hex-color{
+                display: block;
+            }
+        }
+    }
+}
+
+.palette-heart{
+    height: 3px;
+}

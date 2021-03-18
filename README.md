@@ -1,2 +1,2 @@
 # Colorizer
- Color theme picker for website
+ Color theme picker for applications
